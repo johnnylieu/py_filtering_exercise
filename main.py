@@ -1,12 +1,14 @@
 import csv
 import sys
 
+from numpy import MAXDIMS
+
 output = open(sys.argv[2], 'w')
 output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
 output.write(output_header)
 
 minDis = int(sys.argv[3])
-# maxDis = sys.argv[4]
+maxDis = int(sys.argv[4])
 # print(minDis, maxDis) # works
 
 with open(sys.argv[1], 'r') as metafile:
@@ -24,7 +26,8 @@ with open(sys.argv[1], 'r') as metafile:
         # print(row) # works
         line = "{},{},{},{},{},{},{}\n".format(date, time, file, x, y , theta, distance) # output will be in this format for each line
         if distance >= minDis:
-            output.write(line) # output of new file will write this line everytime we iterate through a row
+            if distance <= maxDis:
+                output.write(line) # output of new file will write this line everytime we iterate through a row
 output.close()
 
 # python main.py path_to_input_csv path_to_output_csv min_dist max_dist
