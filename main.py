@@ -1,14 +1,21 @@
 import csv
 import sys
 
+# output = open(sys.argv[2], 'w')
+
 with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
     # header = next(reader)
     # print(header) # works
     for row in reader:
-        minDis = row[5]
-        maxDis = row[6]
-        print(minDis, maxDis) # works
+        date = row[0]
+        time = row[1]
+        file = row[2]
+        x = row[3]
+        y = row[4]
+        theta = row[5]
+        distance = row[6]
+        # print(row) # works
 
 
 
