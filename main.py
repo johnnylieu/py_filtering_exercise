@@ -1,8 +1,6 @@
 import csv
 import sys
 
-from numpy import MAXDIMS
-
 output = open(sys.argv[2], 'w')
 output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
 output.write(output_header)
