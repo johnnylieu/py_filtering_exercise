@@ -1,14 +1,14 @@
 import csv
 import sys
 
-with open("metadata.csv", 'r') as metafile:
+with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
-    header = next(reader)
+    # header = next(reader)
     # print(header) # works
     for row in reader:
         minDis = row[5]
         maxDis = row[6]
-        # print(minDis, maxDis) # works
+        print(minDis, maxDis) # works
 
 
 
