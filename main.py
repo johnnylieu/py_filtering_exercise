@@ -2,6 +2,8 @@ import csv
 import sys
 
 output = open(sys.argv[2], 'w')
+output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
+output.write(output_header)
 
 with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
