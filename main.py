@@ -1,7 +1,7 @@
 import csv
 import sys
 
-# output = open(sys.argv[2], 'w')
+output = open(sys.argv[2], 'w')
 
 with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
@@ -16,6 +16,9 @@ with open(sys.argv[1], 'r') as metafile:
         theta = row[5]
         distance = row[6]
         # print(row) # works
+        line = "{},{},{},{},{},{},{}\n".format(date, time, file, x, y , theta, distance) # output will be in this format for each line
+        output.write(line) # output of new file will write this line everytime we iterate through a row
+output.close()
 
 
 
