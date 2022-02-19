@@ -5,6 +5,10 @@ output = open(sys.argv[2], 'w')
 output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
 output.write(output_header)
 
+minDis = sys.argv[3]
+maxDis = sys.argv[4]
+# print(minDis, maxDis) # works
+
 with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
     # header = next(reader)
