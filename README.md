@@ -11,6 +11,7 @@ distance - how far robot is from the obstacle in mm
 
 ## Task 1
 <https://youtu.be/riVsxv0dX3k>
+
 Task 1:
 Write some filter logic that takes the path to the .csv file as input, and outputs a new .csv to the given output path,
 while filtering out images taken outside of desired distance ranges, for which the range will be given as input.
