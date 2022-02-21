@@ -9,7 +9,6 @@ output.write(output_header)
 file = open(sys.argv[1])
 reader = csv.reader(file)
 rowsOriginal = len(list(reader))
-print(f"{sys.argv[1]} has {rowsOriginal} rows") #works
 
 minDis = int(sys.argv[3])
 maxDis = int(sys.argv[4])
@@ -43,9 +42,10 @@ rowsDiscarded = rowsOriginal - rowsNew - 1 # - 1 to account for the header that 
 percent = (rowsNew / rowsOriginal) * 100
 # print(percent) #works
 # print(rowsDiscarded) # works
+print(f"\n{sys.argv[1]} has {rowsOriginal} rows") #works
 print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
 print(f"There were {rowsDiscarded} rows discarded")
-print(f"There are {percent}% of images within range")
+print(f"There are {percent}% of images within range\n")
 file.close()
 metafile.close()
 
