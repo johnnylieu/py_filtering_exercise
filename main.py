@@ -41,12 +41,13 @@ print(rowsOriginal)
 print(rowsNew)
 rowsDiscarded = rowsOriginal + rowsNew - 1 # - 1 to account for the header that I added
 percent = (rowsNew / rowsOriginal) * 100
-print(percent)
+# print(percent) #works
 print(rowsDiscarded)
 print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
 print(f"There were {rowsDiscarded} rows discarded")
 print(f"There are {percent}% of images within range")
-output.close()
+file.close()
+metafile.close()
 
 # task 2
 # # of total rows
