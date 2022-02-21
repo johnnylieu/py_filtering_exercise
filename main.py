@@ -36,7 +36,11 @@ output.close()
 file = open(sys.argv[2])
 reader = csv.reader(file)
 rowsNew = len(list(reader))
-print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
+print(rowsOriginal)
+rowsDiscarded = rowsOriginal - rowsNew
+print(rowsDiscarded)
+# print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
+# print(f"There were {rowsDiscarded} rows discarded")
 output.close()
 
 # task 2
