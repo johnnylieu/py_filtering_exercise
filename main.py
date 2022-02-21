@@ -37,6 +37,7 @@ file = open(sys.argv[2])
 reader = csv.reader(file)
 rowsNew = len(list(reader))
 print(rowsOriginal)
+print(rowsNew)
 rowsDiscarded = rowsOriginal - rowsNew
 print(rowsDiscarded)
 # print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
