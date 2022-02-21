@@ -1,5 +1,6 @@
 import csv
 import sys
+import math
 
 output = open(sys.argv[2], 'w')
 output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
@@ -38,7 +39,7 @@ reader = csv.reader(file)
 rowsNew = len(list(reader))
 print(rowsOriginal)
 print(rowsNew)
-rowsDiscarded = ((rowsOriginal) - (rowsNew) - 1) # - 1 to account for the header I
+rowsDiscarded = rowsOriginal + rowsNew - 1 # - 1 to account for the header that I added
 print(rowsDiscarded)
 print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
 print(f"There were {rowsDiscarded} rows discarded")
