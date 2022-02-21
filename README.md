@@ -33,7 +33,7 @@ Task 2:
 On top of (or modify) what you wrote for the simple logic to filter by range, at the end of the filter operation
 output some stats about the result. Simple print() would be sufficient.
 Useful stats here might be
-- # of total rows
-- # of rows discarded
+- number of total rows
+- number of rows discarded
 - % of pictures within desired range
 - total execution time of the filter operation
