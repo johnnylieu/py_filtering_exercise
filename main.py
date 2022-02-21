@@ -38,7 +38,7 @@ reader = csv.reader(file)
 rowsNew = len(list(reader))
 print(rowsOriginal)
 print(rowsNew)
-rowsDiscarded = rowsOriginal - rowsNew
+rowsDiscarded = (rowsOriginal - rowsNew) - 1 # - 1 to account for the header I added
 print(rowsDiscarded)
 # print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
 # print(f"There were {rowsDiscarded} rows discarded")
