@@ -39,7 +39,7 @@ reader = csv.reader(file)
 rowsNew = len(list(reader))
 print(rowsOriginal)
 print(rowsNew)
-rowsDiscarded = rowsOriginal + rowsNew - 1 # - 1 to account for the header that I added
+rowsDiscarded = rowsOriginal - rowsNew - 1 # - 1 to account for the header that I added
 percent = (rowsNew / rowsOriginal) * 100
 # print(percent) #works
 print(rowsDiscarded)
