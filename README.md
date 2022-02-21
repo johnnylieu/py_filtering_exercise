@@ -25,3 +25,13 @@ above inputs) and write to output.csv
 - os.path.expanduser(path) might be useful in dealing with '~' in relative file path
 - sys.argv or argparse.ArgumentParser might be useful to grab input parameters
 for the sake of this exercise, it can be assumed that all inputs are valid, i.e. no need to do input validation
+
+## Task 2
+Task 2:
+On top of (or modify) what you wrote for the simple logic to filter by range, at the end of the filter operation
+output some stats about the result. Simple print() would be sufficient.
+Useful stats here might be
+- # of total rows
+- # of rows discarded
+- % of pictures within desired range
+- total execution time of the filter operation
