@@ -33,6 +33,12 @@ with open(sys.argv[1], 'r') as metafile:
                 output.write(line) # output of new file will write this line everytime we iterate through a row
 output.close()
 
+file = open(sys.argv[2])
+reader = csv.reader(file)
+rows = len(list(reader))
+print(rows) #works
+output.close()
+
 # task 2
 # # of total rows
 # # of rows discarded
