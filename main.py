@@ -43,7 +43,7 @@ percent = (rowsNew / rowsOriginal) * 100
 # print(percent) #works
 # print(rowsDiscarded) # works
 print(f"\n{sys.argv[1]} has {rowsOriginal} rows") #works
-print(f"{sys.argv[2]} has {rowsOriginal} rows") #works
+print(f"{sys.argv[2]} has {rowsNew} rows") #works
 print(f"There were {rowsDiscarded} rows discarded")
 print(f"There are {percent}% of images within range\n")
 file.close()
