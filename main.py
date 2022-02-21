@@ -1,6 +1,6 @@
 import csv
 import sys
-import math
+import timeit
 
 output = open(sys.argv[2], 'w')
 output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
@@ -48,6 +48,8 @@ print(f"There were {rowsDiscarded} rows discarded")
 print(f"There are {percent}% of images within range\n")
 file.close()
 metafile.close()
+
+print(f"Execution time is: {timeit.timeit()}\n")
 
 # task 2
 # # of total rows
