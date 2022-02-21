@@ -7,8 +7,8 @@ output.write(output_header)
 
 file = open(sys.argv[1])
 reader = csv.reader(file)
-rows = len(list(reader))
-print(rows) #works
+rowsOriginal = len(list(reader))
+print(rowsOriginal) #works
 
 minDis = int(sys.argv[3])
 maxDis = int(sys.argv[4])
@@ -35,8 +35,8 @@ output.close()
 
 file = open(sys.argv[2])
 reader = csv.reader(file)
-rows = len(list(reader))
-print(rows) #works
+rowsNew = len(list(reader))
+print(rowsNew) #works
 output.close()
 
 # task 2
