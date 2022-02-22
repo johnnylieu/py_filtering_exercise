@@ -10,7 +10,7 @@ x, y, theta - robot coordinates in robot frame in meter
 distance - how far robot is from the obstacle in mm
 
 ## Task 1
-<https://youtu.be/riVsxv0dX3k>
+<https://youtu.be/riVsxv0dX3k> ✅
 
 Task 1:
 Write some filter logic that takes the path to the .csv file as input, and outputs a new .csv to the given output path,
@@ -27,7 +27,7 @@ above inputs) and write to output.csv
 for the sake of this exercise, it can be assumed that all inputs are valid, i.e. no need to do input validation
 
 ## Task 2
-<https://youtu.be/gLZjWVXDj_4>
+<https://youtu.be/gLZjWVXDj_4> ✅
 
 Task 2:
 On top of (or modify) what you wrote for the simple logic to filter by range, at the end of the filter operation
@@ -39,7 +39,7 @@ Useful stats here might be
 - total execution time of the filter operation
 
 ## Task 3
-<https://youtu.be/_Tsw4Mz88DY>
+<https://youtu.be/_Tsw4Mz88DY> ✅
 
 In a new script, design and implement a class interface with the same functionalities as above tasks.
 Include in main() to show how to interact with the class.
