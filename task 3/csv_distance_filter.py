@@ -55,3 +55,7 @@ class CsvFiltering:
 
 def main():
     CsvFiltering.beginFiltering()
+
+# PS: Lines 3 and 4 of main.py could have been left at the bottom of this file (see code below) but I just thought importing it was cooler ¯\_(ツ)_/¯
+# if __name__ == "__main__":
+#     main()
