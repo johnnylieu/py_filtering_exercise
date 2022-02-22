@@ -39,23 +39,7 @@ Useful stats here might be
 - total execution time of the filter operation
 
 ## Task 3
-<https://youtu.be/_Tsw4Mz88DY> ✅
+(Work In Progress)
 
 In a new script, design and implement a class interface with the same functionalities as above tasks.
 Include in main() to show how to interact with the class.
-
-For task 3, I "wrapped" my code from task 2 in a class called CsvFiltering and a function called beginFiltering()
-
-![wrapped script](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/1.bmp "wrapped script")
-
-I then created a function called main() and called the beginFiltering() function.
-
-![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
-
-Lastly, I imported csv_distance_filtering.py into main.py and called the main() function!
-
-![main.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "main.py")
-
-PS: Lines 3 and 4 of main.py could have been left at the bottom of csv_distance_filter.py (see screen shot below) but I just thought importing it was a bit "cooler." 🤷
-
-![main in csv_distance_filter.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/4.bmp "main in csv_distance_filter.py")
