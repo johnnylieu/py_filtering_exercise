@@ -48,7 +48,7 @@ For task 3, I "wrapped" my code from task 2 in a class called CsvFiltering and a
 
 ![wrapped script](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/1.bmp "wrapped script")
 
-I then created a function called main() and called the function.
+I then created a function called main() and called the beginFiltering() function.
 
 ![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
 
