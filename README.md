@@ -54,4 +54,4 @@ I then created a function called main() and called the function.
 
 Lastly, I imported csv_distance_filtering.py into main.py and ran the main() function!
 
-https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp
+![main.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "main.py")
