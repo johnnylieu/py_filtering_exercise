@@ -56,6 +56,6 @@ Lastly, I imported csv_distance_filtering.py into main.py and ran the main() fun
 
 ![main.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "main.py")
 
-PS: I do know lines 3 and 4 of main.py could have been left at the bottom of csv_distance_filter.py (see screen shot below) but I just thought the above was a bit "cooler."
+PS: Lines 3 and 4 of main.py could have been left at the bottom of csv_distance_filter.py (see screen shot below) but I just thought the above was a bit "cooler."
 
 ![main in csv_distance_filter.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/4.bmp "main in csv_distance_filter.py")
