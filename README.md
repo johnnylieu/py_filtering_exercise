@@ -37,3 +37,19 @@ Useful stats here might be
 - number of rows discarded
 - % of pictures within desired range
 - total execution time of the filter operation
+
+## Task 3
+<https://youtu.be/_Tsw4Mz88DY>
+
+In a new script, design and implement a class interface with the same functionalities as above tasks.
+Include in main() to show how to interact with the class.
+
+For task 3, I "wrapped" my code from task 2 in a class called CsvFiltering and a function called beginFiltering()
+
+![wrapped script](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/1.bmp "wrapped script")
+
+I then created a function called main() and called the function.
+
+![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/2.bmp "main()")
+
+Lastly, I imported csv_distance_filtering.py into main.py and ran the main() function!
