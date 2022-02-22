@@ -46,10 +46,12 @@ Include in main() to show how to interact with the class.
 
 For task 3, I "wrapped" my code from task 2 in a class called CsvFiltering and a function called beginFiltering()
 
-![wrapped script](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/1.bmp "wrapped script")
+![wrapped script](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/1.bmp "wrapped script")
 
 I then created a function called main() and called the function.
 
-![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/2.bmp "main()")
+![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
 
 Lastly, I imported csv_distance_filtering.py into main.py and ran the main() function!
+
+https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp
