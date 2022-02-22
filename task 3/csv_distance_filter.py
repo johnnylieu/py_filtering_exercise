@@ -13,20 +13,20 @@ class header:
         # print(output_header) #works
         output.write(output_header)
 
-# class rows:
-#     def __init__(self, inputFile, min, max):
-#         self.inputFile = inputFile
-#         self.min = min
-#         self.max = max
+class rows:
+    def __init__(self, inputFile, min, max):
+        self.inputFile = inputFile
+        self.min = min
+        self.max = max
 
-#     def countRows(mainFile, min, max)
-#         file = open(mainFile)
-#         reader = csv.reader(file)
-#         rowsOriginal = len(list(reader))
+    def countRows(self):
+        file = open(self.inputFile)
+        reader = csv.reader(file)
+        rowsOriginal = len(list(reader))
 
-#         minDis = int(sys.argv[3])
-#         maxDis = int(sys.argv[4])
-#         # print(minDis, maxDis) # works
+        minDis = int(self.min)
+        maxDis = int(self.max)
+        print(rowsOriginal, minDis, maxDis) # works
 
 #         with open(sys.argv[1], 'r') as metafile:
 #             reader = csv.reader(metafile, delimiter=",")
@@ -68,6 +68,9 @@ class header:
 def main():
     currentHeader = header(sys.argv[1], sys.argv[2])
     currentHeader.headerOutput()
+
+    currentRows = rows(sys.argv[1], sys.argv[3], sys.argv[4])
+    currentRows.countRows()
 
 if __name__ == "__main__":
     main()
