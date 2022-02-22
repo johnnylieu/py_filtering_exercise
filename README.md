@@ -52,7 +52,7 @@ I then created a function called main() and called the beginFiltering() function
 
 ![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
 
-Lastly, I imported csv_distance_filtering.py into main.py and ran the main() function!
+Lastly, I imported csv_distance_filtering.py into main.py and called the main() function!
 
 ![main.py](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "main.py")
 
