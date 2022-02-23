@@ -50,7 +50,7 @@ First I created a class called Filter which takes in the terminal parameters. Th
 
 Then I created a global function called main() which has a variable called beginFilter which takes the terminal parameters. Then I called the startFilter() function in main().
 
-if __name__=="main": will run the main() function if this is the main fille which it is.
+if __ name __=="main": will run the main() function if this is the main fille which it is.
 
 ![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
 
