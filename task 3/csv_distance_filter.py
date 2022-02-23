@@ -2,7 +2,7 @@ import csv
 import sys
 import timeit
 
-class filter:
+class Filter:
     def __init__(self, inputFile, outputFile, min, max):
         self.inputFile = inputFile
         self.outputFile = outputFile
@@ -63,7 +63,7 @@ class filter:
         print(f"########### -Johnny Lieu #############\n")
 
 def main():
-    beginFilter = filter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    beginFilter = Filter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
     beginFilter.startFilter()
 
 if __name__ == "__main__":
