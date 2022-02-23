@@ -54,4 +54,6 @@ if __ name __=="main": will run the main() function if this is the main file whi
 
 ![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
 
+![print](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "print")
+
 Thank you for looking!
