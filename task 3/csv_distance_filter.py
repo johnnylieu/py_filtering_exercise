@@ -51,6 +51,7 @@ class filter:
         percent = (rowsNew / rowsOriginal) * 100
         # print(percent) #works
         # print(rowsDiscarded) # works
+        print(f"\n##### Filtering Exercise Task3 ######")
         print(f"\n{sys.argv[1]} has {rowsOriginal} rows") #works
         print(f"{sys.argv[2]} has {rowsNew} rows") #works
         print(f"There were {rowsDiscarded} rows discarded")
@@ -59,6 +60,7 @@ class filter:
         metafile.close()
 
         print(f"Execution time is: {timeit.timeit()}\n")
+        print(f"########### -Johnny Lieu #############\n")
 
 def main():
     beginFilter = filter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
