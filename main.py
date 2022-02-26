@@ -3,6 +3,7 @@ import sys
 import time
 
 t0 = time.time()
+print(t0)
 
 input = sys.argv[1]
 output = sys.argv[2]
@@ -13,7 +14,7 @@ with open(sys.argv[1], 'r') as metafile:
     reader = csv.reader(metafile, delimiter=",")
     for row in reader:
         distance = int(row[-1])
-            with open(sys.argv[2], 'x') as output_file: # using x instead of w returns an error if file already exists
+            with open(sys.argv[2], 'w') as output_file: # using x instead of w returns an error if file already exists
                 lines = metafile.readlines()
                 total_lines = len(lines)
                 output_line = 0
@@ -22,8 +23,10 @@ with open(sys.argv[1], 'r') as metafile:
                     output_file.write(lines)
 
 t1 = time.time()
+print(t1)
 
 total_time = t1 - t0
+print(total_time)
 
 # task 2
 # # of total rows
