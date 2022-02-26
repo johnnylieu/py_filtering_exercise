@@ -20,7 +20,7 @@ with open(sys.argv[1], 'r') as metafile:
             distance = int(elements[-1])
 
             if distance >= min_dis and distance <= max_dis:
-                output_file.write(row)
+                output_file.write(line)
 
 
 t1 = time.time()
