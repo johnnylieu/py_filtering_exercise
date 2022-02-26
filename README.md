@@ -47,15 +47,3 @@ Useful stats here might be
 
 In a new script, design and implement a class interface with the same functionalities as above tasks.
 Include in main() to show how to interact with the class.
-
-First I created a class called Filter which takes in the terminal parameters. Then I created a function called startFilter().
-
-![class, constructor, and function](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/1.bmp "class, constructor, and function")
-
-Then I created a function called main() which has a variable called beginFilter which takes the terminal parameters to create a filter object. Then I called the startFilter() function in main().
-
-if __ name __=="main": will run the main() function if this is the main file which it is.
-
-![main()](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/2.bmp "main()")
-
-![print](https://raw.githubusercontent.com/johnnylieu/py_filtering_exercise/main/task%203/3.bmp "print")
