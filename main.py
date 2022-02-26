@@ -14,7 +14,7 @@ with open(sys.argv[1], 'r') as metafile:
     with open(sys.argv[2], 'x') as output_file: # using x instead of w returns an error if file already exists
         lines = metafile.readlines()
         total_lines = len(lines)
-        print(f"total_lines: {total_lines}")
+        # print(f"total_lines: {total_lines}") # works
         output_line = 0
         for line in lines:
             elements = line.split(",")
@@ -23,7 +23,7 @@ with open(sys.argv[1], 'r') as metafile:
             if distance >= min_dis and distance <= max_dis:
                 output_file.write(line)
                 output_line += 1
-                print(f"output_line: {output_line}")
+                # print(f"output_line: {output_line}") # works
 
 
 t1 = time.time()
@@ -31,6 +31,7 @@ t1 = time.time()
 
 total_time = t1 - t0
 # print(total_time) # works
+print(f"\nTask 1 & 2\n\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {total_time}\n\n -Johnny Lieu\n")
 
 # task 2
 # # of total rows
