@@ -15,12 +15,12 @@ with open(sys.argv[1], 'r') as metafile:
         lines = metafile.readlines()
         total_lines = len(lines)
         print(f"total_lines: {total_lines}")
+        output_line = 0
         for line in lines:
             elements = line.split(",")
             distance = int(elements[-1])
 
             if distance >= min_dis and distance <= max_dis:
-                output_line = 0
                 output_file.write(line)
                 output_line += 1
                 print(f"output_line: {output_line}")
