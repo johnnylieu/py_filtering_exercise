@@ -31,7 +31,7 @@ t1 = time.time()
 
 total_time = t1 - t0
 # print(total_time) # works
-print(f"\nTask 1 & 2\n\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {total_time}\n\n -Johnny Lieu\n")
+print(f"\nTask 1 & 2\n\n{input} has a total of {total_lines} rows.\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {total_time}\n\n -Johnny Lieu\n")
 
 # task 2
 # # of total rows
