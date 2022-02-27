@@ -13,7 +13,7 @@ Each section below starts with a YouTube link to the finished task.
 
 Thank you for looking!
 
-## Task 1
+## Task 1 ✅
 Task 1:
 Write some filter logic that takes the path to the .csv file as input, and outputs a new .csv to the given output path,
 while filtering out images taken outside of desired distance ranges, for which the range will be given as input.
@@ -28,8 +28,8 @@ above inputs) and write to output.csv
 - sys.argv or argparse.ArgumentParser might be useful to grab input parameters
 for the sake of this exercise, it can be assumed that all inputs are valid, i.e. no need to do input validation
 
-## Task 2
-Video of task 1 & 2: <https://youtu.be/7SnSoVRd3yA> ✅
+## Task 2 ✅
+Video of task 1 & 2: <https://youtu.be/7SnSoVRd3yA>
 
 Task 2:
 On top of (or modify) what you wrote for the simple logic to filter by range, at the end of the filter operation
