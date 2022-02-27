@@ -14,8 +14,6 @@ Each section below starts with a YouTube link to the finished task.
 Thank you for looking!
 
 ## Task 1
-<https://youtu.be/riVsxv0dX3k> ✅
-
 Task 1:
 Write some filter logic that takes the path to the .csv file as input, and outputs a new .csv to the given output path,
 while filtering out images taken outside of desired distance ranges, for which the range will be given as input.
@@ -31,7 +29,7 @@ above inputs) and write to output.csv
 for the sake of this exercise, it can be assumed that all inputs are valid, i.e. no need to do input validation
 
 ## Task 2
-<https://youtu.be/gLZjWVXDj_4> ✅
+Video of task 1 & 2: <https://youtu.be/7SnSoVRd3yA> ✅
 
 Task 2:
 On top of (or modify) what you wrote for the simple logic to filter by range, at the end of the filter operation
@@ -43,7 +41,6 @@ Useful stats here might be
 - total execution time of the filter operation
 
 ## Task 3
-<https://youtu.be/gEVAYA8XFOs> ✅
 
 In a new script, design and implement a class interface with the same functionalities as above tasks.
 Include in main() to show how to interact with the class.
