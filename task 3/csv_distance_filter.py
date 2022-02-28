@@ -1,70 +1,48 @@
 import csv
 import sys
-import timeit
+import time
 
-class Filter:
-    def __init__(self, inputFile, outputFile, min, max):
-        self.inputFile = inputFile
-        self.outputFile = outputFile
-        self.min = min
-        self.max = max
+t0 = time.time()
+# print(t0) # works
 
-    def startFilter(self):
-        output = open(self.outputFile, 'w')
-        output_header = "Date, Time, File, x, y, Theta, Distance\n" # optional (not part of task) but looks cleaner
-        # print(output_header) #works
-        output.write(output_header)
+input = sys.argv[1]
+output = sys.argv[2]
+min_dis = int(sys.argv[3])
+max_dis = int(sys.argv[4])
 
-        file = open(self.inputFile)
-        reader = csv.reader(file)
-        rowsOriginal = len(list(reader))
+with open(input, 'r') as metafile:
+    with open(output, 'x') as output_file: # using x instead of w returns an error if file already exists
+        lines = metafile.readlines()
+        total_lines = len(lines)
+        # print(f"total_lines: {total_lines}") # works
+        output_line = 0
+        for line in lines:
+            elements = line.split(",")
+            distance = int(elements[-1])
 
-        minDis = int(self.min)
-        maxDis = int(self.max)
-        # print(rowsOriginal, minDis, maxDis) # works
+            if distance >= min_dis and distance <= max_dis:
+                output_file.write(line)
+                output_line += 1
+                # print(f"output_line: {output_line}") # works
 
-        with open(self.inputFile, 'r') as metafile:
-            reader = csv.reader(metafile, delimiter=",")
-            # header = next(reader)
-            # print(header) # works
-            for row in reader:
-                date = row[0]
-                time = row[1]
-                file = row[2]
-                x = row[3]
-                y = row[4]
-                theta = row[5]
-                distance = int(row[6])
-                # print(row) # works
-                line = "{},{},{},{},{},{},{}\n".format(date, time, file, x, y , theta, distance) # output will be in this format for each line
-                if distance >= minDis:
-                    if distance <= maxDis:
-                        output.write(line) # output of new file will write this line everytime we iterate through a row
-        output.close()
+t1 = time.time()
+# print(t1) # works
 
-        file = open(sys.argv[2])
-        reader = csv.reader(file)
-        rowsNew = len(list(reader))
-        # print(rowsOriginal) # works
-        # print(rowsNew) # works
-        rowsDiscarded = rowsOriginal - rowsNew - 1 # - 1 to account for the header that I added
-        percent = (rowsNew / rowsOriginal) * 100
-        # print(percent) #works
-        # print(rowsDiscarded) # works
-        print(f"\n##### Filtering Exercise Task3 ######")
-        print(f"\n{sys.argv[1]} has {rowsOriginal} rows") #works
-        print(f"{sys.argv[2]} has {rowsNew} rows") #works
-        print(f"There were {rowsDiscarded} rows discarded")
-        print(f"There are {percent}% of images within range\n")
-        file.close()
-        metafile.close()
-
-        print(f"Execution time is: {timeit.timeit()}\n")
-        print(f"########### -Johnny Lieu #############\n")
+print(f"\nTask 1 & 2\n\n{input} has a total of {total_lines} rows.\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {t1 - t0}\n\n -Johnny Lieu\n")
 
 def main():
-    beginFilter = Filter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
-    beginFilter.startFilter()
+    print("hello world")
 
 if __name__ == "__main__":
     main()
+
+    # def main():
+    # beginFilter = Filter(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    # beginFilter.startFilter()
+    # filter = Filter("input-path")
+    
+    # filter.filter_by_distance(min=1,max=2)
+    # filter.filter_by_x(min=1,max=2)
+    # filter.filter_by_y(min=1,max=2)
+    
+    # filter.write_file("output-path")
