@@ -10,8 +10,8 @@ output = sys.argv[2]
 min_dis = int(sys.argv[3])
 max_dis = int(sys.argv[4])
 
-with open(sys.argv[1], 'r') as metafile:
-    with open(sys.argv[2], 'x') as output_file: # using x instead of w returns an error if file already exists
+with open(input, 'r') as metafile:
+    with open(output, 'x') as output_file: # using x instead of w returns an error if file already exists
         lines = metafile.readlines()
         total_lines = len(lines)
         # print(f"total_lines: {total_lines}") # works
@@ -25,13 +25,10 @@ with open(sys.argv[1], 'r') as metafile:
                 output_line += 1
                 # print(f"output_line: {output_line}") # works
 
-
 t1 = time.time()
 # print(t1) # works
 
-total_time = t1 - t0
-# print(total_time) # works
-print(f"\nTask 1 & 2\n\n{input} has a total of {total_lines} rows.\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {total_time}\n\n -Johnny Lieu\n")
+print(f"\nTask 1 & 2\n\n{input} has a total of {total_lines} rows.\n{output} has a total of {output_line} rows.\nThere were {total_lines - output_line} rows discarded.\n{(output_line / total_lines) * 100}% are within desired range.\nTotal execution time: {t1 - t0}\n\n -Johnny Lieu\n")
 
 # task 2
 # # of total rows
